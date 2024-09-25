@@ -2,4 +2,6 @@
 /bin/
 /bin-int/
 /*.make
-/**/Makefile  # Makefiles could be generated in project subdirs
+
+# Makefiles could be generated in project subdirs
+Makefile
