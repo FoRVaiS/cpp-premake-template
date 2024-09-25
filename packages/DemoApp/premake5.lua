@@ -9,7 +9,7 @@ project "DemoApp"
 
   files
 	{
-		"src/**.h",
+		"include/**.h",
 		"src/**.cpp"
 	}
 
