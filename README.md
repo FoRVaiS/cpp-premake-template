@@ -6,12 +6,28 @@ This template is developed on a Linux machine so problems may occur on a Windows
 
 Premake5 structure based on TheCherno's Hazel structure.
 
+Despite the name, this project also supports developing C projects.
+
 ## File Structure
 
 - ./premake5.lua: Global configuration.
 - ./packages/: Home for individual projects.
 - ./bin/: Output for compiled binaries.
 - ./bin-int/: Intermediary file storage.
+- ./templates/: A directory of c and cpp templates.
+
+## Getting Started
+Simply create a new project using the `copy.sh` script.
+```shell
+Usage: ./copy.sh [-t <type>] <name>
+```
+
+For example, to create a new cpp project named "DemoApp":
+```shell
+./copy.sh -t cpp DemoApp
+```
+
+Find the list of available templates in `templates/`
 
 ## Building
 You may develop using a Makefile or a Visual Studio solution, both of which must be manually generated using premake5.
@@ -32,7 +48,7 @@ or
 premake5 vs       # For Visual Studio solutions
 ```
 
-All packages under packages/ will automatically be included in the build process, assuming they have their own premake5.lua defined (see packages/DemoApp).
+All packages under packages/ will automatically be included in the build process, assuming they have their own premake5.lua defined (see templates/template-cpp).
 
 ## Build Configurations
 
