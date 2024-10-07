@@ -1,4 +1,4 @@
-project "DemoApp"
+project "template-cpp"
 	kind "ConsoleApp"
 	language "C++"
 	cppdialect "C++20"
