@@ -9,8 +9,12 @@ project "DemoApp"
 
 	files
 	{
-		"include/**.h",
 		"src/**.cpp"
+	}
+
+	includedirs
+	{
+		"include"
 	}
 
 	filter "system:windows"
