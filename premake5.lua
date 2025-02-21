@@ -26,6 +26,6 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 group "Packages"
   -- Iterate over each file in the "packages" directory and include it in the workspace.
   for _, package in ipairs(os.matchdirs("packages/*")) do
-    include(package)
+    include(package .. "/build.lua")
   end
 group ""
