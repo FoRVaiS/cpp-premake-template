@@ -4,7 +4,7 @@ project "template-cpp"
 	cppdialect "C++20"
 	staticruntime "off"
 
-	targetdir ("%{wks.location}/bin/" .. outputdir .. "/%{prj.name}")
+	targetdir ("%{wks.location}/bin/" .. outputdir)
 	objdir ("%{wks.location}/bin-int/" .. outputdir .. "/%{prj.name}")
 
 	files
