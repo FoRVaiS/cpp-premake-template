@@ -5,3 +5,6 @@
 
 # Makefiles could be generated in project subdirs
 Makefile
+
+# Ignore clangd cache files
+.cache
